@@ -1,0 +1,1523 @@
+{
+"version": "v2",
+"meta": {
+"title": "RSV-B phylogeny",
+"updated": "2023-09-14",
+"build_url": "https://github.com/nextstrain/rsv",
+"data_provenance": [
+{
+"name": "GenBank",
+"url": "https://www.ncbi.nlm.nih.gov/genbank/"
+}
+],
+"maintainers": [
+{
+"name": "Laura Urbanska",
+"url": "http://nextstrain.org"
+},
+{
+"name": "Richard Neher",
+"url": "http://nextstrain.org"
+}
+],
+"display_defaults": {
+"map_triplicate": true,
+"color_by": "clade_membership",
+"transmission_lines": false
+},
+"genome_annotations": {
+"nuc": {
+"end": 1902,
+"start": 1,
+"strand": "+",
+"type": "source",
+"seqid": "results/b/F/F_reference.gbk"
+},
+"F": {
+"end": 1739,
+"seqid": "results/b/F/F_reference.gbk",
+"start": 15,
+"strand": "+",
+"type": "CDS"
+}
+},
+"description": "We gratefully acknowledge the authors, originating and submitting laboratories of the genetic sequences and metadata for sharing their work. Please note that although data generators have generously shared data in an open fashion, that does not mean there should be free license to publish on this data. Data generators should be cited where possible and collaborations should be sought in some circumstances. Please try to avoid scooping someone else's work. Reach out if uncertain.\n\n\nWe maintain three views of human respiratory syncytial virus evolution for each RSV subtype:\n\nThe first is ['rsv/a/genome'](https://nextstrain.org/staging/rsv/a/genome) and ['rsv/b/genome'](https://nextstrain.org/staging/rsv/b/genome), which show evolution of full genome sequences.\n\nThe second is ['rsv/a/G'](https://nextstrain.org/staging/rsv/a/G) and ['rsv/b/G'](https://nextstrain.org/staging/rsv/b/G), which show evolution of only the G gene, which is highly variable and for which more data points are available than for the full-genome.\n\nThe second is ['rsv/a/F'](https://nextstrain.org/staging/rsv/a/F) and ['rsv/b/F'](https://nextstrain.org/staging/rsv/b/G), which show evolution of only the F gene. The F gene builds currently don't contain any clade annotations.\n\n\n#### Analysis\nOur bioinformatic processing workflow can be found at [github.com/nextstrain/rsv](https://github.com/nextstrain/rsv) and includes:\n\n- sequence alignment by a combination of [nextalign](https://docs.nextstrain.org/projects/nextclade/en/stable/user/nextalign-cli.html) and [MAFFT](https://mafft.cbrc.jp/alignment/software/).\n- phylogenetic reconstruction using [IQTREE](http://www.iqtree.org/)\n- ancestral state reconstruction and temporal inference using [TreeTime](https://github.com/neherlab/treetime)\n- clade assignment via clade definitions defined here for\n    [RSV-A/genome](https://github.com/nextstrain/rsv/blob/master/config/clades_genome_a.tsv),\n    [RSV-B/genome](https://github.com/nextstrain/rsv/blob/master/config/clades_genome_b.tsv),\n    [RSV-A/G gene](https://github.com/nextstrain/rsv/blob/master/config/clades_G_a.tsv), and\n    [RSV-B/G gene](https://github.com/nextstrain/rsv/blob/master/config/clades_G_b.tsv) to label RSV clades based on the entire genome and for just the G gene.\n    These clade definitions are based on the proposed nomenclatures by [Goya et al](https://onlinelibrary.wiley.com/doi/abs/10.1111/irv.12715) and [Ramaekers et al](https://doi.org/10.1093/ve/veaa052).\n\n#### Underlying data\nWe curate sequence data and metadata from [NCBI Virus (RSV)](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&VirusLineage_ss=Human%20orthopneumovirus,%20taxid:11250), [NCBI Virus (RSV-A)](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&VirusLineage_ss=Human%20respiratory%20syncytial%20virus%20A,%20taxid:208893), [NCBI Virus (RSV-B)](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&VirusLineage_ss=Human%20respiratory%20syncytial%20virus%20B,%20taxid:208895) as starting point for these analyses. Curated sequences and metadata are available as flat files at:\n\n- [RSV-A sequences](https://data.nextstrain.org/files/workflows/rsv/a/sequences.fasta.xz)\n- [RSV-A metadata](https://data.nextstrain.org/files/workflows/rsv/a/metadata.tsv.gz)\n\n- [RSV-B sequences](https://data.nextstrain.org/files/workflows/rsv/b/sequences.fasta.xz)\n- [RSV-B metadata](https://data.nextstrain.org/files/workflows/rsv/b/metadata.tsv.gz)\n\n\n\n",
+"colorings": [
+{
+"key": "gt",
+"title": "Genotype",
+"type": "categorical"
+},
+{
+"key": "num_date",
+"title": "Date",
+"type": "continuous"
+},
+{
+"key": "country",
+"title": "Country",
+"type": "categorical",
+"scale": [
+[
+"Jordan",
+"#5E1D9D"
+],
+[
+"Taiwan",
+"#4E95BD"
+],
+[
+"Australia",
+"#5DA8A3"
+],
+[
+"New Zealand",
+"#67AE94"
+],
+[
+"Spain",
+"#BDBB48"
+],
+[
+"Netherlands",
+"#D3B23F"
+],
+[
+"Germany",
+"#DDAA3C"
+],
+[
+"Argentina",
+"#E69036"
+],
+[
+"USA",
+"#DE3E27"
+],
+[
+"Canada",
+"#DB2823"
+]
+]
+},
+{
+"key": "region",
+"title": "Region",
+"type": "categorical",
+"scale": [
+[
+"Asia",
+"#447CCD"
+],
+[
+"Oceania",
+"#5EA9A1"
+],
+[
+"Europe",
+"#BEBB48"
+],
+[
+"South America",
+"#E29E39"
+],
+[
+"North America",
+"#E2562B"
+]
+]
+},
+{
+"key": "glyc",
+"title": "Glycosylation",
+"type": "ordinal"
+}
+],
+"filters": [
+"country",
+"region",
+"clade_membership"
+],
+"geo_resolutions": [
+{
+"key": "country",
+"demes": {
+"Argentina": {
+"latitude": -34.0,
+"longitude": -64.0
+},
+"Australia": {
+"latitude": -24.7761085,
+"longitude": 134.755
+},
+"Taiwan": {
+"latitude": 23.6978,
+"longitude": 120.9605
+},
+"Germany": {
+"latitude": 51.0834196,
+"longitude": 10.4234469
+},
+"New Zealand": {
+"latitude": -41.500083,
+"longitude": 172.8344077
+},
+"USA": {
+"latitude": 39.7837304,
+"longitude": -100.4458824
+},
+"Canada": {
+"latitude": 61.0666922,
+"longitude": -107.991707
+},
+"Netherlands": {
+"latitude": 52.3702,
+"longitude": 4.8952
+},
+"Jordan": {
+"latitude": 31.1667049,
+"longitude": 36.941628
+},
+"Spain": {
+"latitude": 40.0028028,
+"longitude": -4.0031039
+}
+}
+},
+{
+"key": "region",
+"demes": {
+"Europe": {
+"latitude": 49.646237,
+"longitude": 10.799454
+},
+"North America": {
+"latitude": 28.2367447,
+"longitude": -97.738017
+},
+"South America": {
+"latitude": -13.083583,
+"longitude": -58.470721
+},
+"Oceania": {
+"latitude": -25.0562891,
+"longitude": 152.008576
+}
+}
+}
+],
+"panels": [
+"tree",
+"map",
+"entropy"
+]
+},
+"tree": {
+"name": "NODE_0000000",
+"node_attrs": {
+"div": 0,
+"num_date": {
+"value": 1978.1507834652755,
+"confidence": [
+1969.4985426591406,
+1982.9782296532892
+]
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "USA",
+"confidence": {
+"Germany": 0.03215365896884154,
+"Jordan": 0.03232358900088643,
+"Netherlands": 0.028956425338762175,
+"USA": 0.7650612220326553
+},
+"entropy": 1.0586803785927434
+}
+},
+"branch_attrs": {
+"mutations": {}
+},
+"children": [
+{
+"name": "KU316181",
+"node_attrs": {
+"div": 0.009571087769829838,
+"num_date": {
+"value": 1990.9986301369863,
+"confidence": [
+1990.0885163449095,
+1990.9986301369863
+]
+},
+"accession": "KU316181",
+"author": {
+"author": "Das,S.R., Halpin,R.A., Puri,V., Akopov,A., Fedorova,N., Stockwell,T., Amedeo,P., Bishop,B., Katzel,D., Schobel,S., Shrivastava,S., Hall,C.B., Tesini,B.L., Schnabel,K.C., Walsh,E.E., Caserta,M.",
+"value": "Das,S.R., Halpin,R.A., Puri,V., Akopov,A., Fedorova,N., Stockwell,T., Amedeo,P., Bishop,B., Katzel,D., Schobel,S., Shrivastava,S., Hall,C.B., Tesini,B.L., Schnabel,K.C., Walsh,E.E., Caserta,M."
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "USA",
+"confidence": {
+"USA": 0.9999999999999999
+},
+"entropy": -9.99866855976916e-13
+},
+"region": {
+"value": "North America"
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"T21C",
+"A35G",
+"T65C",
+"G119A",
+"A257G",
+"A284G",
+"C365T",
+"A369G",
+"G410A",
+"G530A",
+"T614C",
+"T647C",
+"C665T",
+"A896G",
+"A917G",
+"C992T",
+"A1055G",
+"G1097A",
+"A1244T",
+"A1364G",
+"A1409G",
+"G1599A",
+"A1652G",
+"C1653T",
+"C1730T",
+"C1774A",
+"C1826T",
+"C1844T",
+"G1847A",
+"G1854A"
+],
+"F": [
+"I119V",
+"A529T"
+]
+},
+"labels": {
+"aa": "F: I119V, A529T"
+}
+}
+},
+{
+"name": "NODE_0000001",
+"node_attrs": {
+"div": 0.006363553113683537,
+"num_date": {
+"value": 1984.8975089618943,
+"confidence": [
+1978.7999727544425,
+1986.9647180810427
+]
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "USA",
+"confidence": {
+"Germany": 0.009305682876857437,
+"Jordan": 0.009382987612082701,
+"Taiwan": 0.008913366054995719,
+"USA": 0.9356369276506669
+},
+"entropy": 0.3784726332518012
+}
+},
+"branch_attrs": {
+"mutations": {}
+},
+"children": [
+{
+"name": "OK649745",
+"node_attrs": {
+"div": 0.013258843010752863,
+"num_date": {
+"value": 1990.9986301369863,
+"confidence": [
+1990.1387224453022,
+1990.9986301369863
+]
+},
+"accession": "OK649745",
+"author": {
+"author": "Wang,L., Ng,T.F.F., Castro,C.J., Marine,R.L., Magana,L.C., Esona,M., Peret,T.C.T., Thornburg,N.J.",
+"value": "Wang,L., Ng,T.F.F., Castro,C.J., Marine,R.L., Magana,L.C., Esona,M., Peret,T.C.T., Thornburg,N.J."
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "USA",
+"confidence": {
+"USA": 1.0
+},
+"entropy": -1.000088900581841e-12
+},
+"region": {
+"value": "North America"
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"A159C",
+"C176T",
+"T200C",
+"C1455T",
+"A1566G",
+"C1689T",
+"T1718C",
+"T1761C",
+"G1775A",
+"C1812T",
+"C1832T",
+"T1833C",
+"C1851T"
+],
+"F": [
+"T518A"
+]
+},
+"labels": {
+"aa": "F: T518A"
+}
+}
+},
+{
+"name": "NODE_0000002",
+"node_attrs": {
+"div": 0.011129152124636204,
+"num_date": {
+"value": 1992.4641519169572,
+"confidence": [
+1987.763835742058,
+1992.9817314134464
+]
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "USA",
+"confidence": {
+"Argentina": 0.0036885412315728508,
+"Netherlands": 0.0037087770691379683,
+"Taiwan": 0.009910029833353392,
+"USA": 0.9700241024940177
+},
+"entropy": 0.19436950311792678
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"C32T",
+"C608T",
+"C725T",
+"T1040C",
+"G1304A",
+"C1334T",
+"A1391C",
+"T1541C",
+"C1551T"
+]
+}
+},
+"children": [
+{
+"name": "JX198167",
+"node_attrs": {
+"div": 0.011669885456521622,
+"num_date": {
+"value": 1993.0013698630137,
+"confidence": [
+1993.0013698630137,
+1993.0753328652138
+]
+},
+"accession": "JX198167",
+"author": {
+"author": "Tapia,L.I., Piedra,P.A.",
+"value": "Tapia,L.I., Piedra,P.A."
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "USA",
+"confidence": {
+"USA": 1.0
+},
+"entropy": -1.000088900581841e-12
+},
+"region": {
+"value": "North America"
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"T298A"
+],
+"F": [
+"L95Q"
+]
+},
+"labels": {
+"aa": "F: L95Q"
+}
+}
+},
+{
+"name": "NODE_0000003",
+"node_attrs": {
+"div": 0.01856578182165487,
+"num_date": {
+"value": 2001.939945144618,
+"confidence": [
+2000.4207150104398,
+2002.493499446253
+]
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "USA",
+"confidence": {
+"Argentina": 0.11046757889449314,
+"Netherlands": 0.0642812171434546,
+"Taiwan": 0.3589929437393283,
+"USA": 0.39404185859766294
+},
+"entropy": 1.459203070072061
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"T146C",
+"C297T",
+"T528C",
+"T614C",
+"C629T",
+"A746G",
+"G794A",
+"A977G",
+"C1511T",
+"C1571A",
+"C1799T",
+"C1800T",
+"C1810T"
+]
+}
+},
+"children": [
+{
+"name": "NODE_0000004",
+"node_attrs": {
+"div": 0.021210057783815496,
+"num_date": {
+"value": 2006.1500678664836,
+"confidence": [
+2004.821052907427,
+2007.5368640834317
+]
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "Argentina",
+"confidence": {
+"Argentina": 0.595088890768869,
+"New Zealand": 0.13723327888297773,
+"Taiwan": 0.0905834978098612,
+"USA": 0.1055225612138928
+},
+"entropy": 1.3484664000846194
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"G332A",
+"T467C",
+"C665T",
+"A827G",
+"T905C",
+"C1803T"
+]
+}
+},
+"children": [
+{
+"name": "KF826845",
+"node_attrs": {
+"div": 0.0227950860500475,
+"num_date": {
+"value": 2008.441256830601,
+"confidence": [
+2008.441256830601,
+2008.441256830601
+]
+},
+"accession": "KF826845",
+"author": {
+"author": "Lorenzi,H., Town,C., Halpin,R., Bera,J., Ransier,A., Fedorova,N., Stockwell,T., Amedeo,P., Appalla,L., Bishop,B., Edworthy,P., Gupta,N., Hoover,J., Katzel,D., Li,K., Schobel,S., Shrivastava,S., Thovarai,V., Wang,S., Rebuffo-Scheer,C., Fan,J., He,J., Kehl,S.C., Lederboer,N., Jurgens,L.A., Bose,M.E., Beck,E.T., Kumar,S., Videla,C., Wentworth,D.E., Henrickson,K.J.",
+"value": "Lorenzi,H., Town,C., Halpin,R., Bera,J., Ransier,A., Fedorova,N., Stockwell,T., Amedeo,P., Appalla,L., Bishop,B., Edworthy,P., Gupta,N., Hoover,J., Katzel,D., Li,K., Schobel,S., Shrivastava,S., Thovarai,V., Wang,S., Rebuffo-Scheer,C., Fan,J., He,J., Kehl,S.C., Lederboer,N., Jurgens,L.A., Bose,M.E., Beck,E.T., Kumar,S., Videla,C., Wentworth,D.E., Henrickson,K.J."
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "Argentina",
+"confidence": {
+"Argentina": 1.0
+},
+"entropy": -1.000088900581841e-12
+},
+"region": {
+"value": "South America"
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"C313T",
+"A866G",
+"C1413T"
+],
+"F": [
+"T100I",
+"L467F"
+]
+},
+"labels": {
+"aa": "F: T100I, L467F"
+}
+}
+},
+{
+"name": "KX765888",
+"node_attrs": {
+"div": 0.030261981573864817,
+"num_date": {
+"value": 2014.5767123287671,
+"confidence": [
+2014.5767123287671,
+2014.5767123287671
+]
+},
+"accession": "KX765888",
+"author": {
+"author": "Shabman,R., Das,S.R., Shilts,M., Fedorova,N., Puri,V., Shrivastava,S., Amedeo,P., Williams,M., Barratt,K., Mitchell,J., Jennings,L.",
+"value": "Shabman,R., Das,S.R., Shilts,M., Fedorova,N., Puri,V., Shrivastava,S., Amedeo,P., Williams,M., Barratt,K., Mitchell,J., Jennings,L."
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "New Zealand",
+"confidence": {
+"New Zealand": 1.0
+},
+"entropy": -1.000088900581841e-12
+},
+"region": {
+"value": "Oceania"
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"A31G",
+"T68C",
+"G69A",
+"C176T",
+"A347T",
+"C362T",
+"T374C",
+"T380C",
+"T388C",
+"T394C",
+"A1001T",
+"C1190T",
+"C1406A",
+"G1534A",
+"C1784T",
+"T1814C",
+"C1879T"
+],
+"F": [
+"H6R",
+"A19T",
+"L125P",
+"V127A",
+"R507H"
+]
+},
+"labels": {
+"aa": "F: H6R, A19T, L125P, V127A, R507H"
+}
+}
+}
+]
+},
+{
+"name": "NODE_0000005",
+"node_attrs": {
+"div": 0.019093736981340523,
+"num_date": {
+"value": 2002.0734773762247,
+"confidence": [
+2001.1310930520185,
+2002.7089653978142
+]
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "Taiwan",
+"confidence": {
+"Argentina": 0.04314488991800853,
+"Netherlands": 0.0787046184366456,
+"Taiwan": 0.4736994093700412,
+"USA": 0.369593594470565
+},
+"entropy": 1.232290291375498
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"C656T"
+]
+}
+},
+"children": [
+{
+"name": "B91-355-02",
+"node_attrs": {
+"div": 0.020785302108233983,
+"num_date": {
+"value": 2002.9986301369863,
+"confidence": [
+2002.320803405516,
+2002.9986301369863
+]
+},
+"accession": "JX477547",
+"author": {
+"author": "Chi,H., Liu,H.F., Weng,L.C., Wang,N.Y., Chiu,N.C., Lai,M.J., Lin,Y.C., Chiu,Y.Y., Hsieh,W.S., Huang,L.M., Chiang,C.L., Huang,G.J., Cheng,Y.Y.",
+"value": "Chi,H., Liu,H.F., Weng,L.C., Wang,N.Y., Chiu,N.C., Lai,M.J., Lin,Y.C., Chiu,Y.Y., Hsieh,W.S., Huang,L.M., Chiang,C.L., Huang,G.J., Cheng,Y.Y."
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "Taiwan",
+"confidence": {
+"Taiwan": 1.0
+},
+"entropy": -1.000088900581841e-12
+},
+"region": {
+"value": "Asia"
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"G851A",
+"T875C"
+]
+}
+}
+},
+{
+"name": "NODE_0000006",
+"node_attrs": {
+"div": 0.020150518114161936,
+"num_date": {
+"value": 2004.740305462087,
+"confidence": [
+2001.5219515032004,
+2004.9182980416526
+]
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "USA",
+"confidence": {
+"Argentina": 0.007622309494337542,
+"Netherlands": 0.30473549547662376,
+"Taiwan": 0.07217565082173587,
+"USA": 0.5968393744134022
+},
+"entropy": 1.0039711223437604
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"C665T",
+"A941T",
+"C1774T"
+]
+}
+},
+"children": [
+{
+"name": "JX576757",
+"node_attrs": {
+"div": 0.021207144525629676,
+"num_date": {
+"value": 2005.0369863013698,
+"confidence": [
+2005.0369863013698,
+2005.0369863013698
+]
+},
+"accession": "JX576757",
+"author": {
+"author": "Tan,L., Coenjaerts,F.E., Houspie,L., Viveen,M.C., van Bleek,G.M., Wiertz,E.J., Martin,D.P., Lemey,P.",
+"value": "Tan,L., Coenjaerts,F.E., Houspie,L., Viveen,M.C., van Bleek,G.M., Wiertz,E.J., Martin,D.P., Lemey,P."
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "Netherlands",
+"confidence": {
+"Netherlands": 1.0
+},
+"entropy": -1.000088900581841e-12
+},
+"region": {
+"value": "Europe"
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"G5A",
+"G1560A"
+],
+"F": [
+"V516I"
+]
+},
+"labels": {
+"aa": "F: V516I"
+}
+}
+},
+{
+"name": "NODE_0000007",
+"node_attrs": {
+"div": 0.020678677374248722,
+"num_date": {
+"value": 2005.1624826991233,
+"confidence": [
+2005.015103475727,
+2007.0015700081115
+]
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "USA",
+"confidence": {
+"Germany": 0.003991450665700036,
+"Netherlands": 0.009116717191704116,
+"Taiwan": 0.0020822933499956035,
+"USA": 0.9824068074462307
+},
+"entropy": 0.11360924420165106
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"T149G"
+],
+"F": [
+"F45L"
+]
+},
+"labels": {
+"aa": "F: F45L"
+}
+},
+"children": [
+{
+"name": "MK453523",
+"node_attrs": {
+"div": 0.023855645413499493,
+"num_date": {
+"value": 2009.0619741799082,
+"confidence": [
+2009.0013698630137,
+2009.9986301369863
+]
+},
+"accession": "MK453523",
+"author": {
+"author": "Greninger,A.L., Tait,A., Makhsous,N.",
+"value": "Greninger,A.L., Tait,A., Makhsous,N."
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "USA",
+"confidence": {
+"USA": 1.0
+},
+"entropy": -1.000088900581841e-12
+},
+"region": {
+"value": "North America"
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"G74T",
+"A737T",
+"T872C",
+"T1238C",
+"C1844T",
+"C1879T"
+],
+"F": [
+"L20F"
+]
+},
+"labels": {
+"aa": "F: L20F"
+}
+}
+},
+{
+"name": "hRSV/B/USA/7D7/2010",
+"node_attrs": {
+"div": 0.021206742496904466,
+"num_date": {
+"value": 2010.8342465753424,
+"confidence": [
+2010.8342465753424,
+2010.9052974212464
+]
+},
+"accession": "OQ848542",
+"author": {
+"author": "Sereewit,J., Hajian,P., Xie,H., Greninger,A.L.",
+"value": "Sereewit,J., Hajian,P., Xie,H., Greninger,A.L."
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "USA",
+"confidence": {
+"USA": 1.0
+},
+"entropy": -1.000088900581841e-12
+},
+"region": {
+"value": "North America"
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"G104A"
+]
+}
+}
+},
+{
+"name": "NODE_0000009",
+"node_attrs": {
+"div": 0.02920180715794905,
+"num_date": {
+"value": 2012.8170381001837,
+"confidence": [
+2008.9478508259767,
+2014.326605528635
+]
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "Australia",
+"confidence": {
+"Australia": 0.43706261498626287,
+"Canada": 0.13745798826335656,
+"Spain": 0.14251767748550398,
+"USA": 0.18530945031732998
+},
+"entropy": 1.62644653502855
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"C80T",
+"G119A",
+"C322T",
+"T529A",
+"T531C",
+"C532T",
+"T656A",
+"G1076A",
+"A1271G",
+"C1280T",
+"C1385T",
+"C1689T",
+"C1783T",
+"A1808G",
+"C1843T",
+"A1901G"
+],
+"F": [
+"A103V",
+"L172Q",
+"S173L"
+]
+},
+"labels": {
+"aa": "F: A103V, L172Q, S173L"
+}
+},
+"children": [
+{
+"name": "MH760694",
+"node_attrs": {
+"div": 0.033446655507896,
+"num_date": {
+"value": 2016.7745901639344,
+"confidence": [
+2016.7745901639344,
+2016.7745901639344
+]
+},
+"accession": "MH760694",
+"author": {
+"author": "Di Giallonardo,F., Kok,J., Fernandez,M., Carter,I., Geoghegan,J.L., Dwyer,D.E., Holmes,E.C., Eden,J.S., Eden,J.-S.",
+"value": "Di Giallonardo,F., Kok,J., Fernandez,M., Carter,I., Geoghegan,J.L., Dwyer,D.E., Holmes,E.C., Eden,J.S., Eden,J.-S."
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "Australia",
+"confidence": {
+"Australia": 1.0
+},
+"entropy": -1.000088900581841e-12
+},
+"region": {
+"value": "Oceania"
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"C30T",
+"A317G",
+"T374C",
+"T394C",
+"T521C",
+"G920A",
+"T974C",
+"A1061G"
+],
+"F": [
+"H6Y",
+"V127A"
+]
+},
+"labels": {
+"aa": "F: H6Y, V127A"
+}
+}
+},
+{
+"name": "NODE_0000010",
+"node_attrs": {
+"div": 0.033981243828053766,
+"num_date": {
+"value": 2017.6330600122894,
+"confidence": [
+2015.9889033433642,
+2018.8414340714296
+]
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "Spain",
+"confidence": {
+"Australia": 0.070862230252545,
+"Canada": 0.41738810642529467,
+"Spain": 0.43476810352824496,
+"USA": 0.034930555991579126
+},
+"entropy": 1.2401603297119876
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"A242T",
+"A287T",
+"A586G",
+"A632G",
+"A640G",
+"A668G",
+"C1040T",
+"T1380C",
+"C1541T"
+],
+"F": [
+"K191R",
+"I206M",
+"Q209R"
+]
+},
+"labels": {
+"aa": "F: K191R, I206M, Q209R"
+}
+},
+"children": [
+{
+"name": "340103037",
+"node_attrs": {
+"div": 0.0356071187769767,
+"num_date": {
+"value": 2020.1571038251366,
+"confidence": [
+2020.1571038251366,
+2020.1571038251366
+]
+},
+"accession": "OQ278693",
+"author": {
+"author": "Wilkins,D., Langedijk,A.C., Lebbink,R.J., Morehouse,C.A., Abram,M.E., Ahani,B., Aksyuk,A.A., Baraldi,E., Brady,T., Chen,A.T., Chi,H., Choi,E.H., Cohen,R., Danilenko,D.M., Gopalakrishnan,V., Greenough,A., Heikkinen,T., Hosoya,M., Keller,C., Kelly,E.J., Kragten-Tabatabaie,L., Martinon-Torres,F., Mascarenas-de Los Santos,A.H., Nunes,M.C., Palomino,M.A., Papenburg,J., Pernica,J.M., Richmond,P., Stein,R.T., Tuffy,K.M., Verwey,C., Esser,M.T., Tabor,D.E., Bont,L.J.",
+"value": "Wilkins,D., Langedijk,A.C., Lebbink,R.J., Morehouse,C.A., Abram,M.E., Ahani,B., Aksyuk,A.A., Baraldi,E., Brady,T., Chen,A.T., Chi,H., Choi,E.H., Cohen,R., Danilenko,D.M., Gopalakrishnan,V., Greenough,A., Heikkinen,T., Hosoya,M., Keller,C., Kelly,E.J., Kragten-Tabatabaie,L., Martinon-Torres,F., Mascarenas-de Los Santos,A.H., Nunes,M.C., Palomino,M.A., Papenburg,J., Pernica,J.M., Richmond,P., Stein,R.T., Tuffy,K.M., Verwey,C., Esser,M.T., Tabor,D.E., Bont,L.J."
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "Spain",
+"confidence": {
+"Spain": 1.0
+},
+"entropy": -1.000088900581841e-12
+},
+"region": {
+"value": "Europe"
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"T525C",
+"C1242T",
+"C1455T"
+]
+}
+}
+},
+{
+"name": "10203032",
+"node_attrs": {
+"div": 0.037236723665786384,
+"num_date": {
+"value": 2020.2527322404371,
+"confidence": [
+2020.2527322404371,
+2020.2527322404371
+]
+},
+"accession": "OQ278563",
+"author": {
+"author": "Wilkins,D., Langedijk,A.C., Lebbink,R.J., Morehouse,C.A., Abram,M.E., Ahani,B., Aksyuk,A.A., Baraldi,E., Brady,T., Chen,A.T., Chi,H., Choi,E.H., Cohen,R., Danilenko,D.M., Gopalakrishnan,V., Greenough,A., Heikkinen,T., Hosoya,M., Keller,C., Kelly,E.J., Kragten-Tabatabaie,L., Martinon-Torres,F., Mascarenas-de Los Santos,A.H., Nunes,M.C., Palomino,M.A., Papenburg,J., Pernica,J.M., Richmond,P., Stein,R.T., Tuffy,K.M., Verwey,C., Esser,M.T., Tabor,D.E., Bont,L.J.",
+"value": "Wilkins,D., Langedijk,A.C., Lebbink,R.J., Morehouse,C.A., Abram,M.E., Ahani,B., Aksyuk,A.A., Baraldi,E., Brady,T., Chen,A.T., Chi,H., Choi,E.H., Cohen,R., Danilenko,D.M., Gopalakrishnan,V., Greenough,A., Heikkinen,T., Hosoya,M., Keller,C., Kelly,E.J., Kragten-Tabatabaie,L., Martinon-Torres,F., Mascarenas-de Los Santos,A.H., Nunes,M.C., Palomino,M.A., Papenburg,J., Pernica,J.M., Richmond,P., Stein,R.T., Tuffy,K.M., Verwey,C., Esser,M.T., Tabor,D.E., Bont,L.J."
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "Canada",
+"confidence": {
+"Canada": 0.9999999999999999
+},
+"entropy": -9.99866855976916e-13
+},
+"region": {
+"value": "North America"
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"C77T",
+"T155C",
+"G332A",
+"A788G",
+"T809C",
+"T1502C"
+]
+}
+}
+}
+]
+}
+]
+},
+{
+"name": "NODE_0000012",
+"node_attrs": {
+"div": 0.022264025260230136,
+"num_date": {
+"value": 2007.2432795758737,
+"confidence": [
+2005.7136076917939,
+2007.8918348477307
+]
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "USA",
+"confidence": {
+"Germany": 0.04260442855159585,
+"Jordan": 0.004556857319466958,
+"Netherlands": 0.0026002130168516625,
+"USA": 0.9470966017752327
+},
+"entropy": 0.24952080925885683
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"C335T",
+"T761C",
+"T803C"
+]
+}
+},
+"children": [
+{
+"name": "KF530265",
+"node_attrs": {
+"div": 0.02384868244176213,
+"num_date": {
+"value": 2009.16301369863,
+"confidence": [
+2009.16301369863,
+2009.16301369863
+]
+},
+"accession": "KF530265",
+"author": {
+"author": "Lorenzi,H., Town,C., Halpin,R., Bera,J., Ransier,A., Fedorova,N., Stockwell,T., Amedeo,P., Appalla,L., Bishop,B., Edworthy,P., Gupta,N., Hoover,J., Katzel,D., Schobel,S., Shrivastava,S., Thovarai,V., Wang,S., Rebuffo-Scheer,C., Fan,J., He,J., Kehl,S.C., Lederboer,N., Jurgens,L.A., Bose,M.E., Beck,E.T., Kumar,S., Neumann-Haefelin,D., Wentworth,D.E., Henrickson,K.J.",
+"value": "Lorenzi,H., Town,C., Halpin,R., Bera,J., Ransier,A., Fedorova,N., Stockwell,T., Amedeo,P., Appalla,L., Bishop,B., Edworthy,P., Gupta,N., Hoover,J., Katzel,D., Schobel,S., Shrivastava,S., Thovarai,V., Wang,S., Rebuffo-Scheer,C., Fan,J., He,J., Kehl,S.C., Lederboer,N., Jurgens,L.A., Bose,M.E., Beck,E.T., Kumar,S., Neumann-Haefelin,D., Wentworth,D.E., Henrickson,K.J."
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "Germany",
+"confidence": {
+"Germany": 1.0
+},
+"entropy": -1.000088900581841e-12
+},
+"region": {
+"value": "Europe"
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"A27G",
+"T388C",
+"T1298C"
+],
+"F": [
+"I5V",
+"L125P"
+]
+},
+"labels": {
+"aa": "F: I5V, L125P"
+}
+}
+},
+{
+"name": "NODE_0000013",
+"node_attrs": {
+"div": 0.023320546655319335,
+"num_date": {
+"value": 2007.8294831502828,
+"confidence": [
+2007.0141766158083,
+2009.1175581670502
+]
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "USA",
+"confidence": {
+"Germany": 0.010216271337942737,
+"Jordan": 0.009872667496386794,
+"USA": 0.9776582492946507
+},
+"entropy": 0.13230003092383033
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"G746A",
+"C1894T"
+]
+}
+},
+"children": [
+{
+"name": "hRSV/B/USA/7B6/2010",
+"node_attrs": {
+"div": 0.027028814046893664,
+"num_date": {
+"value": 2010.9136986301369,
+"confidence": [
+2010.8423558525942,
+2010.9136986301369
+]
+},
+"accession": "OQ848541",
+"author": {
+"author": "Sereewit,J., Hajian,P., Xie,H., Greninger,A.L.",
+"value": "Sereewit,J., Hajian,P., Xie,H., Greninger,A.L."
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "USA",
+"confidence": {
+"USA": 1.0
+},
+"entropy": -1.000088900581841e-12
+},
+"region": {
+"value": "North America"
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"T1085C",
+"T1112C",
+"C1280T",
+"T1643C",
+"T1649G",
+"C1689T",
+"A1779G"
+]
+}
+}
+},
+{
+"name": "NODE_0000014",
+"node_attrs": {
+"div": 0.02437706810836575,
+"num_date": {
+"value": 2008.5212879003632,
+"confidence": [
+2007.8522156597019,
+2009.716175570574
+]
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "USA",
+"confidence": {
+"Germany": 0.006638465258645045,
+"Jordan": 0.059475444778642805,
+"Netherlands": 0.001341727383256614,
+"USA": 0.9276171666142508
+},
+"entropy": 0.31467973763784274
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"A1073G",
+"T1721C"
+]
+}
+},
+"children": [
+{
+"name": "KX655654",
+"node_attrs": {
+"div": 0.028614357781263918,
+"num_date": {
+"value": 2011.1191780821919,
+"confidence": [
+2011.1191780821919,
+2011.1191780821919
+]
+},
+"accession": "KX655654",
+"author": {
+"author": "Shabman,R., Das,S.R., Puri,V., Fedorova,N., Amedeo,P., Williams,M., Shrivastava,S., Halasa,N.",
+"value": "Shabman,R., Das,S.R., Puri,V., Fedorova,N., Amedeo,P., Williams,M., Shrivastava,S., Halasa,N."
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "Jordan",
+"confidence": {
+"Jordan": 1.0
+},
+"entropy": -1.000088900581841e-12
+},
+"region": {
+"value": "Asia"
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"T575C",
+"A620G",
+"C1193T",
+"C1321T",
+"C1600T",
+"G1759A",
+"T1880C",
+"T1881C"
+],
+"F": [
+"S436F",
+"A529V"
+]
+},
+"labels": {
+"aa": "F: S436F, A529V"
+}
+}
+},
+{
+"name": "KU950471",
+"node_attrs": {
+"div": 0.028086025019419803,
+"num_date": {
+"value": 2013.5849315068492,
+"confidence": [
+2013.5849315068492,
+2013.5849315068492
+]
+},
+"accession": "KU950471",
+"author": {
+"author": "Das,S.R., Halpin,R.A., Shilts,M., Puri,V., Akopov,A., Fedorova,N., Stockwell,T., Amedeo,P., Bishop,B., Katzel,D., Schobel,S., Shrivastava,S., Hartert,T.",
+"value": "Das,S.R., Halpin,R.A., Shilts,M., Puri,V., Akopov,A., Fedorova,N., Stockwell,T., Amedeo,P., Bishop,B., Katzel,D., Schobel,S., Shrivastava,S., Hartert,T."
+},
+"glyc": {
+"value": 0
+},
+"country": {
+"value": "USA",
+"confidence": {
+"USA": 1.0
+},
+"entropy": -1.000088900581841e-12
+},
+"region": {
+"value": "North America"
+}
+},
+"branch_attrs": {
+"mutations": {
+"nuc": [
+"C57T",
+"G69A",
+"T531G",
+"T1085C",
+"T1088C",
+"C1217T",
+"A1901C"
+],
+"F": [
+"L15F",
+"A19T",
+"S173A"
+]
+},
+"labels": {
+"aa": "F: L15F, A19T, S173A"
+}
+}
+}
+]
+}
+]
+}
+]
+}
+]
+}
+]
+}
+]
+}
+]
+}
+]
+}
+]
+}
+]
+}
+}
