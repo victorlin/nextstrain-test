@@ -312,6 +312,7 @@
   "tree": {
     "name": "NODE_0000001",
     "node_attrs": {
+      "hidden": "timetree",
       "div": 0,
       "num_date": {
         "value": 1629.162,
@@ -350,6 +351,7 @@
       {
         "name": "NODE_0000209",
         "node_attrs": {
+          "hidden": "timetree",
           "div": 0.0157,
           "num_date": {
             "value": 1993.167,
@@ -13742,6 +13744,7 @@
       {
         "name": "NODE_0000200",
         "node_attrs": {
+          "hidden": "timetree",
           "div": 0.00376,
           "num_date": {
             "value": 1716.418,
@@ -13865,6 +13868,7 @@
           {
             "name": "NODE_0000201",
             "node_attrs": {
+              "hidden": "timetree",
               "div": 0.0128,
               "num_date": {
                 "value": 2001.637,
@@ -14664,6 +14668,7 @@
           {
             "name": "NODE_0000145",
             "node_attrs": {
+              "hidden": "timetree",
               "div": 0.00424,
               "num_date": {
                 "value": 1714.03,
@@ -14691,6 +14696,7 @@
               {
                 "name": "NODE_0000146",
                 "node_attrs": {
+                  "hidden": "timetree",
                   "div": 0.0153,
                   "num_date": {
                     "value": 1965.658,
@@ -17868,6 +17874,7 @@
               {
                 "name": "NODE_0000086",
                 "node_attrs": {
+                  "hidden": "timetree",
                   "div": 0.00939,
                   "num_date": {
                     "value": 1813.571,
@@ -18012,6 +18019,7 @@
                   {
                     "name": "NODE_0000087",
                     "node_attrs": {
+                      "hidden": "timetree",
                       "div": 0.013,
                       "num_date": {
                         "value": 1888.245,
@@ -18117,6 +18125,7 @@
                       {
                         "name": "NODE_0000088",
                         "node_attrs": {
+                          "hidden": "timetree",
                           "div": 0.0136,
                           "num_date": {
                             "value": 1898.074,
@@ -18164,6 +18173,7 @@
                           {
                             "name": "NODE_0000089",
                             "node_attrs": {
+                              "hidden": "timetree",
                               "div": 0.0176,
                               "num_date": {
                                 "value": 1960.474,
@@ -18453,6 +18463,7 @@
                               {
                                 "name": "NODE_0000091",
                                 "node_attrs": {
+                                  "hidden": "timetree",
                                   "div": 0.0182,
                                   "num_date": {
                                     "value": 1974.54,
@@ -18771,6 +18782,7 @@
                           {
                             "name": "NODE_0000094",
                             "node_attrs": {
+                              "hidden": "timetree",
                               "div": 0.0139,
                               "num_date": {
                                 "value": 1908.302,
@@ -18813,6 +18825,7 @@
                               {
                                 "name": "NODE_0000095",
                                 "node_attrs": {
+                                  "hidden": "timetree",
                                   "div": 0.0154,
                                   "num_date": {
                                     "value": 1949.623,
@@ -18875,6 +18888,7 @@
                                   {
                                     "name": "NODE_0000096",
                                     "node_attrs": {
+                                      "hidden": "timetree",
                                       "div": 0.0181,
                                       "num_date": {
                                         "value": 2005.611,
@@ -19145,6 +19159,7 @@
                                   {
                                     "name": "NODE_0000098",
                                     "node_attrs": {
+                                      "hidden": "timetree",
                                       "div": 0.0172,
                                       "num_date": {
                                         "value": 2005.789,
@@ -19765,6 +19780,7 @@
                               {
                                 "name": "NODE_0000105",
                                 "node_attrs": {
+                                  "hidden": "timetree",
                                   "div": 0.0184,
                                   "num_date": {
                                     "value": 2015.898,
@@ -20581,6 +20597,7 @@
                       {
                         "name": "NODE_0000115",
                         "node_attrs": {
+                          "hidden": "timetree",
                           "div": 0.0164,
                           "num_date": {
                             "value": 1989.26,
@@ -22611,6 +22628,7 @@
                   {
                     "name": "NODE_0000015",
                     "node_attrs": {
+                      "hidden": "timetree",
                       "div": 0.0097,
                       "num_date": {
                         "value": 1824.69,
@@ -22646,6 +22664,7 @@
                       {
                         "name": "NODE_0000014",
                         "node_attrs": {
+                          "hidden": "timetree",
                           "div": 0.0141,
                           "num_date": {
                             "value": 1967.038,
@@ -23821,6 +23840,7 @@
                       {
                         "name": "NODE_0000016",
                         "node_attrs": {
+                          "hidden": "timetree",
                           "div": 0.0116,
                           "num_date": {
                             "value": 1852.895,
@@ -23892,6 +23912,7 @@
                           {
                             "name": "NODE_0000017",
                             "node_attrs": {
+                              "hidden": "timetree",
                               "div": 0.0186,
                               "num_date": {
                                 "value": 2011.447,
@@ -24255,6 +24276,7 @@
                           {
                             "name": "NODE_0000019",
                             "node_attrs": {
+                              "hidden": "timetree",
                               "div": 0.0204,
                               "num_date": {
                                 "value": 2011.539,
