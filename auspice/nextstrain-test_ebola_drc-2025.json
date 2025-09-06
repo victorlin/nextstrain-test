@@ -1,0 +1,338 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of the ongoing 2025 Ebola epidemic",
+    "updated": "2025-09-06",
+    "build_url": "https://github.com/nextstrain/ebola",
+    "data_provenance": [
+      {
+        "name": "GenBank",
+        "url": "https://www.ncbi.nlm.nih.gov/genbank/"
+      },
+      {
+        "name": "Pathoplexus",
+        "url": "https://pathoplexus.org"
+      }
+    ],
+    "maintainers": [
+      {
+        "name": "the Nextstrain team",
+        "url": "https://nextstrain.org/team"
+      }
+    ],
+    "display_defaults": {
+      "color_by": "country",
+      "geo_resolution": "country",
+      "tip_label": "strain"
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 18959,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "defaults/ebov.gb"
+      },
+      "L": {
+        "end": 18219,
+        "seqid": "defaults/ebov.gb",
+        "start": 11581,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "NP": {
+        "end": 2689,
+        "seqid": "defaults/ebov.gb",
+        "start": 470,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "VP24": {
+        "end": 11100,
+        "seqid": "defaults/ebov.gb",
+        "start": 10345,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "VP30": {
+        "end": 9375,
+        "seqid": "defaults/ebov.gb",
+        "start": 8509,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "VP35": {
+        "end": 4151,
+        "seqid": "defaults/ebov.gb",
+        "start": 3129,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "VP40": {
+        "end": 5459,
+        "seqid": "defaults/ebov.gb",
+        "start": 4479,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "sGP": {
+        "segments": [
+          {
+            "end": 6922,
+            "start": 6039
+          },
+          {
+            "end": 6933,
+            "start": 6924
+          }
+        ],
+        "seqid": "defaults/ebov.gb",
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "description": "This is a Nextstrain analysis of the 2025 Zaire ebolavirus outbreak.\n",
+    "warning": "Work in progress.",
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "dataUseTerms",
+        "title": "Data use terms",
+        "type": "categorical"
+      },
+      {
+        "key": "author",
+        "title": "Author",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "division",
+        "title": "Division",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "division",
+      "author"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Democratic Republic of the Congo": {
+            "latitude": -4.0383,
+            "longitude": 21.7587
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000000",
+    "node_attrs": {
+      "div": 0,
+      "country": {
+        "value": "Democratic Republic of the Congo"
+      },
+      "division": {
+        "value": "Kasai"
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "PP_003RXEP",
+        "node_attrs": {
+          "div": 0.00042377,
+          "PPX_accession": {
+            "value": "PP_003RXEP.1",
+            "url": "https://pathoplexus.org/seq/PP_003RXEP.1"
+          },
+          "restrictedUntil": {
+            "value": "2026-09-05"
+          },
+          "accession": "PP_003RXEP",
+          "author": {
+            "author": "Amuri-Aziza, Adrienne; Luakanda - Ndelemo, Gradi; Makangara-Cigolo, Jean-Claude; Akil-Bandali, Prince; Paku-Tshambu, Princesse; Wilkinson, Sam; Tshulo, Louis; Quick, Josh; Citenga, Andre; Muswamba-Kayembe, Chloe; Ntumba-Tshitenge, Olga; Lokilo-Lofiko, Emmanuel; Cikaya-Kankolongo, Fiston; Rilia, Ola; Kimbonza, Servet; Pukuta, Elisabeth; Mukadi, Daniel; Ngandu, Christian; Mossoko, Mathias; Kabamba -Lungenyi, Gabriel; Lumembe-Numbi, Raphael; Mabika-Bope, Elzedeck; Mukadi, Patrick; Pratt, Catherine; Mwamba, Dieudonne; Loman, Nick; Rambaut, Andrew; Kinganda-Lusamaki, Eddy; Wawina-Bokalanga, Tony; Mumba - Ngoyi, Dieudonne; Muyembe-Tamfum, Jean-Jacques; Ahuka-Mundeke, Steve; Mbala-Kingebeni, Placide",
+            "value": "Amuri-Aziza, Adrienne; Luakanda - Ndelemo, Gradi; Makangara-Cigolo, Jean-Claude; Akil-Bandali, Prince; Paku-Tshambu, Princesse; Wilkinson, Sam; Tshulo, Louis; Quick, Josh; Citenga, Andre; Muswamba-Kayembe, Chloe; Ntumba-Tshitenge, Olga; Lokilo-Lofiko, Emmanuel; Cikaya-Kankolongo, Fiston; Rilia, Ola; Kimbonza, Servet; Pukuta, Elisabeth; Mukadi, Daniel; Ngandu, Christian; Mossoko, Mathias; Kabamba -Lungenyi, Gabriel; Lumembe-Numbi, Raphael; Mabika-Bope, Elzedeck; Mukadi, Patrick; Pratt, Catherine; Mwamba, Dieudonne; Loman, Nick; Rambaut, Andrew; Kinganda-Lusamaki, Eddy; Wawina-Bokalanga, Tony; Mumba - Ngoyi, Dieudonne; Muyembe-Tamfum, Jean-Jacques; Ahuka-Mundeke, Steve; Mbala-Kingebeni, Placide"
+          },
+          "country": {
+            "value": "Democratic Republic of the Congo"
+          },
+          "division": {
+            "value": "Kasai"
+          },
+          "dataUseTerms": {
+            "value": "RESTRICTED",
+            "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T2867C",
+              "T2910C",
+              "T2916C",
+              "T2924C",
+              "T2945C",
+              "T2967C",
+              "G4273A",
+              "T10009C"
+            ]
+          }
+        }
+      },
+      {
+        "name": "PP_003RXHG",
+        "node_attrs": {
+          "div": 0.00060358,
+          "PPX_accession": {
+            "value": "PP_003RXHG.1",
+            "url": "https://pathoplexus.org/seq/PP_003RXHG.1"
+          },
+          "restrictedUntil": {
+            "value": "2026-09-05"
+          },
+          "accession": "PP_003RXHG",
+          "author": {
+            "author": "Amuri-Aziza, Adrienne; Luakanda - Ndelemo, Gradi; Makangara-Cigolo, Jean-Claude; Akil-Bandali, Prince; Paku-Tshambu, Princesse; Wilkinson, Sam; Tshulo, Louis; Quick, Josh; Citenga, Andre; Muswamba-Kayembe, Chloe; Ntumba-Tshitenge, Olga; Lokilo-Lofiko, Emmanuel; Cikaya-Kankolongo, Fiston; Rilia, Ola; Kimbonza, Servet; Pukuta, Elisabeth; Mukadi, Daniel; Ngandu, Christian; Mossoko, Mathias; Kabamba -Lungenyi, Gabriel; Lumembe-Numbi, Raphael; Mabika-Bope, Elzedeck; Mukadi, Patrick; Pratt, Catherine; Mwamba, Dieudonne; Loman, Nick; Rambaut, Andrew; Kinganda-Lusamaki, Eddy; Wawina-Bokalanga, Tony; Mumba - Ngoyi, Dieudonne; Muyembe-Tamfum, Jean-Jacques; Ahuka-Mundeke, Steve; Mbala-Kingebeni, Placide",
+            "value": "Amuri-Aziza, Adrienne; Luakanda - Ndelemo, Gradi; Makangara-Cigolo, Jean-Claude; Akil-Bandali, Prince; Paku-Tshambu, Princesse; Wilkinson, Sam; Tshulo, Louis; Quick, Josh; Citenga, Andre; Muswamba-Kayembe, Chloe; Ntumba-Tshitenge, Olga; Lokilo-Lofiko, Emmanuel; Cikaya-Kankolongo, Fiston; Rilia, Ola; Kimbonza, Servet; Pukuta, Elisabeth; Mukadi, Daniel; Ngandu, Christian; Mossoko, Mathias; Kabamba -Lungenyi, Gabriel; Lumembe-Numbi, Raphael; Mabika-Bope, Elzedeck; Mukadi, Patrick; Pratt, Catherine; Mwamba, Dieudonne; Loman, Nick; Rambaut, Andrew; Kinganda-Lusamaki, Eddy; Wawina-Bokalanga, Tony; Mumba - Ngoyi, Dieudonne; Muyembe-Tamfum, Jean-Jacques; Ahuka-Mundeke, Steve; Mbala-Kingebeni, Placide"
+          },
+          "country": {
+            "value": "Democratic Republic of the Congo"
+          },
+          "division": {
+            "value": "Kasai"
+          },
+          "dataUseTerms": {
+            "value": "RESTRICTED",
+            "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T2768C",
+              "T4280C",
+              "T8967C",
+              "A9258G",
+              "A10157T",
+              "T11007C",
+              "G12522A",
+              "T12756C",
+              "C17445A",
+              "T18319C",
+              "A18457G"
+            ]
+          }
+        }
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 5.392e-05,
+          "country": {
+            "value": "Democratic Republic of the Congo"
+          },
+          "division": {
+            "value": "Kasai"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T2435C"
+            ]
+          }
+        },
+        "children": [
+          {
+            "name": "PP_003RXGK",
+            "node_attrs": {
+              "div": 0.00021592,
+              "PPX_accession": {
+                "value": "PP_003RXGK.1",
+                "url": "https://pathoplexus.org/seq/PP_003RXGK.1"
+              },
+              "restrictedUntil": {
+                "value": "2026-09-05"
+              },
+              "accession": "PP_003RXGK",
+              "author": {
+                "author": "Amuri-Aziza, Adrienne; Luakanda - Ndelemo, Gradi; Makangara-Cigolo, Jean-Claude; Akil-Bandali, Prince; Paku-Tshambu, Princesse; Wilkinson, Sam; Tshulo, Louis; Quick, Josh; Citenga, Andre; Muswamba-Kayembe, Chloe; Ntumba-Tshitenge, Olga; Lokilo-Lofiko, Emmanuel; Cikaya-Kankolongo, Fiston; Rilia, Ola; Kimbonza, Servet; Pukuta, Elisabeth; Mukadi, Daniel; Ngandu, Christian; Mossoko, Mathias; Kabamba -Lungenyi, Gabriel; Lumembe-Numbi, Raphael; Mabika-Bope, Elzedeck; Mukadi, Patrick; Pratt, Catherine; Mwamba, Dieudonne; Loman, Nick; Rambaut, Andrew; Kinganda-Lusamaki, Eddy; Wawina-Bokalanga, Tony; Mumba - Ngoyi, Dieudonne; Muyembe-Tamfum, Jean-Jacques; Ahuka-Mundeke, Steve; Mbala-Kingebeni, Placide",
+                "value": "Amuri-Aziza, Adrienne; Luakanda - Ndelemo, Gradi; Makangara-Cigolo, Jean-Claude; Akil-Bandali, Prince; Paku-Tshambu, Princesse; Wilkinson, Sam; Tshulo, Louis; Quick, Josh; Citenga, Andre; Muswamba-Kayembe, Chloe; Ntumba-Tshitenge, Olga; Lokilo-Lofiko, Emmanuel; Cikaya-Kankolongo, Fiston; Rilia, Ola; Kimbonza, Servet; Pukuta, Elisabeth; Mukadi, Daniel; Ngandu, Christian; Mossoko, Mathias; Kabamba -Lungenyi, Gabriel; Lumembe-Numbi, Raphael; Mabika-Bope, Elzedeck; Mukadi, Patrick; Pratt, Catherine; Mwamba, Dieudonne; Loman, Nick; Rambaut, Andrew; Kinganda-Lusamaki, Eddy; Wawina-Bokalanga, Tony; Mumba - Ngoyi, Dieudonne; Muyembe-Tamfum, Jean-Jacques; Ahuka-Mundeke, Steve; Mbala-Kingebeni, Placide"
+              },
+              "country": {
+                "value": "Democratic Republic of the Congo"
+              },
+              "division": {
+                "value": "Kasai"
+              },
+              "dataUseTerms": {
+                "value": "RESTRICTED",
+                "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A8328G",
+                  "C11536T",
+                  "G12351A"
+                ]
+              }
+            }
+          },
+          {
+            "name": "PP_003RXFM",
+            "node_attrs": {
+              "div": 5.492e-05,
+              "PPX_accession": {
+                "value": "PP_003RXFM.1",
+                "url": "https://pathoplexus.org/seq/PP_003RXFM.1"
+              },
+              "restrictedUntil": {
+                "value": "2026-09-05"
+              },
+              "accession": "PP_003RXFM",
+              "author": {
+                "author": "Amuri-Aziza, Adrienne; Luakanda - Ndelemo, Gradi; Makangara-Cigolo, Jean-Claude; Akil-Bandali, Prince; Paku-Tshambu, Princesse; Wilkinson, Sam; Tshulo, Louis; Quick, Josh; Citenga, Andre; Muswamba-Kayembe, Chloe; Ntumba-Tshitenge, Olga; Lokilo-Lofiko, Emmanuel; Cikaya-Kankolongo, Fiston; Rilia, Ola; Kimbonza, Servet; Pukuta, Elisabeth; Mukadi, Daniel; Ngandu, Christian; Mossoko, Mathias; Kabamba -Lungenyi, Gabriel; Lumembe-Numbi, Raphael; Mabika-Bope, Elzedeck; Mukadi, Patrick; Pratt, Catherine; Mwamba, Dieudonne; Loman, Nick; Rambaut, Andrew; Kinganda-Lusamaki, Eddy; Wawina-Bokalanga, Tony; Mumba - Ngoyi, Dieudonne; Muyembe-Tamfum, Jean-Jacques; Ahuka-Mundeke, Steve; Mbala-Kingebeni, Placide",
+                "value": "Amuri-Aziza, Adrienne; Luakanda - Ndelemo, Gradi; Makangara-Cigolo, Jean-Claude; Akil-Bandali, Prince; Paku-Tshambu, Princesse; Wilkinson, Sam; Tshulo, Louis; Quick, Josh; Citenga, Andre; Muswamba-Kayembe, Chloe; Ntumba-Tshitenge, Olga; Lokilo-Lofiko, Emmanuel; Cikaya-Kankolongo, Fiston; Rilia, Ola; Kimbonza, Servet; Pukuta, Elisabeth; Mukadi, Daniel; Ngandu, Christian; Mossoko, Mathias; Kabamba -Lungenyi, Gabriel; Lumembe-Numbi, Raphael; Mabika-Bope, Elzedeck; Mukadi, Patrick; Pratt, Catherine; Mwamba, Dieudonne; Loman, Nick; Rambaut, Andrew; Kinganda-Lusamaki, Eddy; Wawina-Bokalanga, Tony; Mumba - Ngoyi, Dieudonne; Muyembe-Tamfum, Jean-Jacques; Ahuka-Mundeke, Steve; Mbala-Kingebeni, Placide"
+              },
+              "country": {
+                "value": "Democratic Republic of the Congo"
+              },
+              "division": {
+                "value": "Kasai"
+              },
+              "dataUseTerms": {
+                "value": "RESTRICTED",
+                "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
