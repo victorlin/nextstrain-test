@@ -21,8 +21,8 @@
       }
     ],
     "display_defaults": {
-      "color_by": "country",
-      "geo_resolution": "country",
+      "color_by": "division",
+      "geo_resolution": "division",
       "tip_label": "strain"
     },
     "genome_annotations": {
@@ -134,6 +134,15 @@
             "longitude": 21.7587
           }
         }
+      },
+      {
+        "key": "division",
+        "demes": {
+          "Kasai": {
+            "latitude": -4.947,
+            "longitude": 21.106
+          }
+        }
       }
     ],
     "panels": [
@@ -146,11 +155,11 @@
     "name": "NODE_0000000",
     "node_attrs": {
       "div": 0,
-      "country": {
-        "value": "Democratic Republic of the Congo"
-      },
       "division": {
         "value": "Kasai"
+      },
+      "country": {
+        "value": "Democratic Republic of the Congo"
       }
     },
     "branch_attrs": {
@@ -173,15 +182,15 @@
             "author": "Amuri-Aziza, Adrienne; Luakanda - Ndelemo, Gradi; Makangara-Cigolo, Jean-Claude; Akil-Bandali, Prince; Paku-Tshambu, Princesse; Wilkinson, Sam; Tshulo, Louis; Quick, Josh; Citenga, Andre; Muswamba-Kayembe, Chloe; Ntumba-Tshitenge, Olga; Lokilo-Lofiko, Emmanuel; Cikaya-Kankolongo, Fiston; Rilia, Ola; Kimbonza, Servet; Pukuta, Elisabeth; Mukadi, Daniel; Ngandu, Christian; Mossoko, Mathias; Kabamba -Lungenyi, Gabriel; Lumembe-Numbi, Raphael; Mabika-Bope, Elzedeck; Mukadi, Patrick; Pratt, Catherine; Mwamba, Dieudonne; Loman, Nick; Rambaut, Andrew; Kinganda-Lusamaki, Eddy; Wawina-Bokalanga, Tony; Mumba - Ngoyi, Dieudonne; Muyembe-Tamfum, Jean-Jacques; Ahuka-Mundeke, Steve; Mbala-Kingebeni, Placide",
             "value": "Amuri-Aziza, Adrienne; Luakanda - Ndelemo, Gradi; Makangara-Cigolo, Jean-Claude; Akil-Bandali, Prince; Paku-Tshambu, Princesse; Wilkinson, Sam; Tshulo, Louis; Quick, Josh; Citenga, Andre; Muswamba-Kayembe, Chloe; Ntumba-Tshitenge, Olga; Lokilo-Lofiko, Emmanuel; Cikaya-Kankolongo, Fiston; Rilia, Ola; Kimbonza, Servet; Pukuta, Elisabeth; Mukadi, Daniel; Ngandu, Christian; Mossoko, Mathias; Kabamba -Lungenyi, Gabriel; Lumembe-Numbi, Raphael; Mabika-Bope, Elzedeck; Mukadi, Patrick; Pratt, Catherine; Mwamba, Dieudonne; Loman, Nick; Rambaut, Andrew; Kinganda-Lusamaki, Eddy; Wawina-Bokalanga, Tony; Mumba - Ngoyi, Dieudonne; Muyembe-Tamfum, Jean-Jacques; Ahuka-Mundeke, Steve; Mbala-Kingebeni, Placide"
           },
-          "country": {
-            "value": "Democratic Republic of the Congo"
-          },
           "division": {
             "value": "Kasai"
           },
           "dataUseTerms": {
             "value": "RESTRICTED",
             "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
+          },
+          "country": {
+            "value": "Democratic Republic of the Congo"
           }
         },
         "branch_attrs": {
@@ -193,7 +202,7 @@
               "T2924C",
               "T2945C",
               "T2967C",
-              "G4273A",
+              "C4280T",
               "T10009C"
             ]
           }
@@ -215,22 +224,22 @@
             "author": "Amuri-Aziza, Adrienne; Luakanda - Ndelemo, Gradi; Makangara-Cigolo, Jean-Claude; Akil-Bandali, Prince; Paku-Tshambu, Princesse; Wilkinson, Sam; Tshulo, Louis; Quick, Josh; Citenga, Andre; Muswamba-Kayembe, Chloe; Ntumba-Tshitenge, Olga; Lokilo-Lofiko, Emmanuel; Cikaya-Kankolongo, Fiston; Rilia, Ola; Kimbonza, Servet; Pukuta, Elisabeth; Mukadi, Daniel; Ngandu, Christian; Mossoko, Mathias; Kabamba -Lungenyi, Gabriel; Lumembe-Numbi, Raphael; Mabika-Bope, Elzedeck; Mukadi, Patrick; Pratt, Catherine; Mwamba, Dieudonne; Loman, Nick; Rambaut, Andrew; Kinganda-Lusamaki, Eddy; Wawina-Bokalanga, Tony; Mumba - Ngoyi, Dieudonne; Muyembe-Tamfum, Jean-Jacques; Ahuka-Mundeke, Steve; Mbala-Kingebeni, Placide",
             "value": "Amuri-Aziza, Adrienne; Luakanda - Ndelemo, Gradi; Makangara-Cigolo, Jean-Claude; Akil-Bandali, Prince; Paku-Tshambu, Princesse; Wilkinson, Sam; Tshulo, Louis; Quick, Josh; Citenga, Andre; Muswamba-Kayembe, Chloe; Ntumba-Tshitenge, Olga; Lokilo-Lofiko, Emmanuel; Cikaya-Kankolongo, Fiston; Rilia, Ola; Kimbonza, Servet; Pukuta, Elisabeth; Mukadi, Daniel; Ngandu, Christian; Mossoko, Mathias; Kabamba -Lungenyi, Gabriel; Lumembe-Numbi, Raphael; Mabika-Bope, Elzedeck; Mukadi, Patrick; Pratt, Catherine; Mwamba, Dieudonne; Loman, Nick; Rambaut, Andrew; Kinganda-Lusamaki, Eddy; Wawina-Bokalanga, Tony; Mumba - Ngoyi, Dieudonne; Muyembe-Tamfum, Jean-Jacques; Ahuka-Mundeke, Steve; Mbala-Kingebeni, Placide"
           },
-          "country": {
-            "value": "Democratic Republic of the Congo"
-          },
           "division": {
             "value": "Kasai"
           },
           "dataUseTerms": {
             "value": "RESTRICTED",
             "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
+          },
+          "country": {
+            "value": "Democratic Republic of the Congo"
           }
         },
         "branch_attrs": {
           "mutations": {
             "nuc": [
               "T2768C",
-              "T4280C",
+              "A4273G",
               "T8967C",
               "A9258G",
               "A10157T",
@@ -248,11 +257,11 @@
         "name": "NODE_0000001",
         "node_attrs": {
           "div": 5.392e-05,
-          "country": {
-            "value": "Democratic Republic of the Congo"
-          },
           "division": {
             "value": "Kasai"
+          },
+          "country": {
+            "value": "Democratic Republic of the Congo"
           }
         },
         "branch_attrs": {
@@ -279,15 +288,15 @@
                 "author": "Amuri-Aziza, Adrienne; Luakanda - Ndelemo, Gradi; Makangara-Cigolo, Jean-Claude; Akil-Bandali, Prince; Paku-Tshambu, Princesse; Wilkinson, Sam; Tshulo, Louis; Quick, Josh; Citenga, Andre; Muswamba-Kayembe, Chloe; Ntumba-Tshitenge, Olga; Lokilo-Lofiko, Emmanuel; Cikaya-Kankolongo, Fiston; Rilia, Ola; Kimbonza, Servet; Pukuta, Elisabeth; Mukadi, Daniel; Ngandu, Christian; Mossoko, Mathias; Kabamba -Lungenyi, Gabriel; Lumembe-Numbi, Raphael; Mabika-Bope, Elzedeck; Mukadi, Patrick; Pratt, Catherine; Mwamba, Dieudonne; Loman, Nick; Rambaut, Andrew; Kinganda-Lusamaki, Eddy; Wawina-Bokalanga, Tony; Mumba - Ngoyi, Dieudonne; Muyembe-Tamfum, Jean-Jacques; Ahuka-Mundeke, Steve; Mbala-Kingebeni, Placide",
                 "value": "Amuri-Aziza, Adrienne; Luakanda - Ndelemo, Gradi; Makangara-Cigolo, Jean-Claude; Akil-Bandali, Prince; Paku-Tshambu, Princesse; Wilkinson, Sam; Tshulo, Louis; Quick, Josh; Citenga, Andre; Muswamba-Kayembe, Chloe; Ntumba-Tshitenge, Olga; Lokilo-Lofiko, Emmanuel; Cikaya-Kankolongo, Fiston; Rilia, Ola; Kimbonza, Servet; Pukuta, Elisabeth; Mukadi, Daniel; Ngandu, Christian; Mossoko, Mathias; Kabamba -Lungenyi, Gabriel; Lumembe-Numbi, Raphael; Mabika-Bope, Elzedeck; Mukadi, Patrick; Pratt, Catherine; Mwamba, Dieudonne; Loman, Nick; Rambaut, Andrew; Kinganda-Lusamaki, Eddy; Wawina-Bokalanga, Tony; Mumba - Ngoyi, Dieudonne; Muyembe-Tamfum, Jean-Jacques; Ahuka-Mundeke, Steve; Mbala-Kingebeni, Placide"
               },
-              "country": {
-                "value": "Democratic Republic of the Congo"
-              },
               "division": {
                 "value": "Kasai"
               },
               "dataUseTerms": {
                 "value": "RESTRICTED",
                 "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
+              },
+              "country": {
+                "value": "Democratic Republic of the Congo"
               }
             },
             "branch_attrs": {
@@ -316,15 +325,15 @@
                 "author": "Amuri-Aziza, Adrienne; Luakanda - Ndelemo, Gradi; Makangara-Cigolo, Jean-Claude; Akil-Bandali, Prince; Paku-Tshambu, Princesse; Wilkinson, Sam; Tshulo, Louis; Quick, Josh; Citenga, Andre; Muswamba-Kayembe, Chloe; Ntumba-Tshitenge, Olga; Lokilo-Lofiko, Emmanuel; Cikaya-Kankolongo, Fiston; Rilia, Ola; Kimbonza, Servet; Pukuta, Elisabeth; Mukadi, Daniel; Ngandu, Christian; Mossoko, Mathias; Kabamba -Lungenyi, Gabriel; Lumembe-Numbi, Raphael; Mabika-Bope, Elzedeck; Mukadi, Patrick; Pratt, Catherine; Mwamba, Dieudonne; Loman, Nick; Rambaut, Andrew; Kinganda-Lusamaki, Eddy; Wawina-Bokalanga, Tony; Mumba - Ngoyi, Dieudonne; Muyembe-Tamfum, Jean-Jacques; Ahuka-Mundeke, Steve; Mbala-Kingebeni, Placide",
                 "value": "Amuri-Aziza, Adrienne; Luakanda - Ndelemo, Gradi; Makangara-Cigolo, Jean-Claude; Akil-Bandali, Prince; Paku-Tshambu, Princesse; Wilkinson, Sam; Tshulo, Louis; Quick, Josh; Citenga, Andre; Muswamba-Kayembe, Chloe; Ntumba-Tshitenge, Olga; Lokilo-Lofiko, Emmanuel; Cikaya-Kankolongo, Fiston; Rilia, Ola; Kimbonza, Servet; Pukuta, Elisabeth; Mukadi, Daniel; Ngandu, Christian; Mossoko, Mathias; Kabamba -Lungenyi, Gabriel; Lumembe-Numbi, Raphael; Mabika-Bope, Elzedeck; Mukadi, Patrick; Pratt, Catherine; Mwamba, Dieudonne; Loman, Nick; Rambaut, Andrew; Kinganda-Lusamaki, Eddy; Wawina-Bokalanga, Tony; Mumba - Ngoyi, Dieudonne; Muyembe-Tamfum, Jean-Jacques; Ahuka-Mundeke, Steve; Mbala-Kingebeni, Placide"
               },
-              "country": {
-                "value": "Democratic Republic of the Congo"
-              },
               "division": {
                 "value": "Kasai"
               },
               "dataUseTerms": {
                 "value": "RESTRICTED",
                 "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
+              },
+              "country": {
+                "value": "Democratic Republic of the Congo"
               }
             },
             "branch_attrs": {
